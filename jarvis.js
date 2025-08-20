@@ -59,7 +59,8 @@ function speak(text) {
 
 // Example: simple ChatGPT fetch (replace with your actual API key)
 async function getChatGPTResponse(prompt) {
-  const apiKey = 'YOUR_OPENAI_API_KEY'; // Replace this
+  const config=require('./config.json');
+  console.log(configAPI):
   try {
     const res = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
